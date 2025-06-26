@@ -1,3 +1,4 @@
+
 board = [
     [".", ".", "."],
     [".", ".", "."],
@@ -35,6 +36,7 @@ def switch_player(current_player):
         return "X"
 
 def play_game():
+    # Clear the board at the start of each game
     for i in range(3):
         for j in range(3):
             board[i][j] = "."
@@ -74,4 +76,5 @@ def play_game():
             break
         current_player = switch_player(current_player)
 
+# Run the
 
